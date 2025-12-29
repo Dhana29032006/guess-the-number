@@ -1,6 +1,8 @@
 const secretNumber = Math.floor(Math.random() * 10) + 1;
 let attempts = 0;
 
+document.getElementById("submitBtn").addEventListener("click", checkGuess);
+
 function checkGuess() {
     const input = document.getElementById("guessInput");
     const message = document.getElementById("message");
@@ -29,4 +31,5 @@ function checkGuess() {
 
     attemptsText.textContent = `Attempts: ${attempts}`;
     input.value = "";
+    input.focus();
 }
