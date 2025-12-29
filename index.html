@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Number Guessing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="game-container">
-        <h1>🎯 Number Guessing Game</h1>
+        <h1>🎯 Guess the Number Game</h1>
         <p>Guess the number between <strong>1</strong> and <strong>10</strong></p>
 
-        <input type="number" id="guessInput" placeholder="Enter your guess" />
-        <button onclick="checkGuess()">Submit</button>
+        <input type="number" id="guessInput" placeholder="Enter your guess" min="1" max="10">
+        <button id="submitBtn">Submit</button>
 
         <p id="message"></p>
         <p id="attempts"></p>
